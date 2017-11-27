@@ -13,7 +13,7 @@ class Todos extends Component {
                 <Link to="/">My Todos</Link>
               </li>
               <li>
-                <Link to="/todos.add">Add Todos</Link>
+                <Link to="/todos/add">Add Todos</Link>
               </li>
               <li>
                 <Link to="/about">About</Link>
