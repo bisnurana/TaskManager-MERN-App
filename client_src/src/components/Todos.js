@@ -13,9 +13,12 @@ class Todos extends Component {
     this.getTodos();
   }
   getTodos() {
-    axios.get('http://localhost:3000/api/todos').then(response => {
-      this.setState({ todos: response.data });
-    });
+    axios
+      .get('http://localhost:3000/api/todos')
+      .then(response => {
+        this.setState({ todos: response.data });
+      })
+      .catch(err => console.log(err));
   }
   render() {
     const todoItem = this.state.todos.map(item => {
