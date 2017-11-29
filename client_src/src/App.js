@@ -7,12 +7,12 @@ import Nav from './components/Nav';
 const App = () => (
   <div>
     <Nav />
-    <div>
+    <div className="container">
       <Main />
     </div>
 
     <div>
-      <Link to="/about">Add</Link>
+      <Link to="/todos/add">Add</Link>
     </div>
   </div>
 );

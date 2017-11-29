@@ -10,10 +10,10 @@ class Todos extends Component {
             <a href="/">2Do</a>
             <ul>
               <li>
-                <Link to="/">My Todos</Link>
+                <Link to="/">All Tasks</Link>
               </li>
               <li>
-                <Link to="/todos/add">Add Todos</Link>
+                <Link to="/todos/add">Add Task</Link>
               </li>
               <li>
                 <Link to="/about">About</Link>

@@ -21,6 +21,13 @@ class Todos extends Component {
       .catch(err => console.log(err));
   }
   render() {
+    if (this.state.todos.length === 0) {
+      return (
+        <div>
+          Nothing to show. <p>Please add something.</p>
+        </div>
+      );
+    }
     const todoItem = this.state.todos.map(item => {
       return <TodoItem key={item.id} item={item} />;
     });
