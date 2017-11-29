@@ -60,45 +60,67 @@ class EditTodo extends Component {
   render() {
     return (
       <div>
-        <h1>Add your Task</h1>
-        <form onSubmit={this.onSubmit.bind(this)}>
-          <label>Task Name:</label>
-          <input
-            type="text"
-            name="name"
-            ref="name"
-            required
-            value={this.state.name}
-            onChange={this.onInputChange.bind(this)}
-          />
-          <label>Note:</label>
-          <textarea
-            type="text"
-            name="detail"
-            ref="note"
-            value={this.state.detail}
-            onChange={this.onInputChange.bind(this)}
-          />
-          <label>Date:</label>
-          <input
-            type="date"
-            name="date"
-            ref="date"
-            value={this.state.date}
-            onChange={this.onInputChange.bind(this)}
-          />
-          <label>Location:</label>
-          <input
-            type="text"
-            name="location"
-            ref="location"
-            value={this.state.location}
-            onChange={this.onInputChange.bind(this)}
-          />
-          <button onClick={this.props.history.goBack}>Cancel</button>
-          <button type="submit" value="Submit">
-            Save
-          </button>
+        <h2 className="p-1 text-blue">Add your Task</h2>
+        <form
+          className="bg-gray px-1 py-3 dark-shadow d-flex"
+          onSubmit={this.onSubmit.bind(this)}
+        >
+          <div className="col-6">
+            <label>Task Name:</label>
+            <input
+              className=" input d-block mb-1"
+              type="text"
+              name="name"
+              ref="name"
+              required
+              value={this.state.name}
+              onChange={this.onInputChange.bind(this)}
+            />
+            <label>Date:</label>
+            <input
+              className="input d-block mb-1"
+              type="date"
+              name="date"
+              ref="date"
+              value={this.state.date}
+              onChange={this.onInputChange.bind(this)}
+            />
+            <label>Location:</label>
+            <input
+              className=" input d-block mb-1"
+              type="text"
+              name="location"
+              ref="location"
+              value={this.state.location}
+              onChange={this.onInputChange.bind(this)}
+            />
+          </div>
+          <div className="col-6">
+            <label>Note:</label>
+            <textarea
+              className="d-block input-note"
+              type="text"
+              name="detail"
+              ref="note"
+              value={this.state.detail}
+              onChange={this.onInputChange.bind(this)}
+            />
+            <br />
+
+            <a
+              className="btn bg-orange text-white mr-1"
+              onClick={this.props.history.goBack}
+            >
+              Cancel
+            </a>
+            <button
+              className="btn bg-green text-white"
+              type="submit"
+              value="Submit"
+            >
+              Save
+            </button>
+          </div>
         </form>
       </div>
     );

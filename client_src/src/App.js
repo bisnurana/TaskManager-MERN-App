@@ -7,12 +7,14 @@ import Nav from './components/Nav';
 const App = () => (
   <div>
     <Nav />
-    <div className="container">
+    <div className="container my-3">
       <Main />
     </div>
 
     <div>
-      <Link to="/todos/add">Add</Link>
+      <Link className="btn-float text-white bg-blue" to="/todos/add">
+        +
+      </Link>
     </div>
   </div>
 );

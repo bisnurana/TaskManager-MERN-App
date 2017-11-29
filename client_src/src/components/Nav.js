@@ -5,20 +5,32 @@ class Todos extends Component {
   render() {
     return (
       <div>
-        <nav>
-          <div>
-            <a href="/">2Do</a>
-            <ul>
-              <li>
-                <Link to="/">All Tasks</Link>
-              </li>
-              <li>
-                <Link to="/todos/add">Add Task</Link>
-              </li>
-              <li>
-                <Link to="/about">About</Link>
-              </li>
-            </ul>
+        <nav className="bg-blue">
+          <div className="container d-flex space-between">
+            <div className="nav-brand">
+              <Link className="text-white" to="/">
+                .Do
+              </Link>
+            </div>
+            <div className="nav-content">
+              <ul className="d-flex">
+                <li className="list-item">
+                  <Link className="text-white" to="/">
+                    <span className="task-icon">⇅</span>
+                  </Link>
+                </li>
+                <li className="list-item">
+                  <Link className="text-white" to="/todos/add">
+                    Add Task
+                  </Link>
+                </li>
+                <li className="list-item">
+                  <Link className="text-white" to="/about">
+                    About
+                  </Link>
+                </li>
+              </ul>
+            </div>
           </div>
         </nav>
       </div>
