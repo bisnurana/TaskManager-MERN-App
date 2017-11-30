@@ -28,7 +28,7 @@ class AddTodo extends Component {
       <div>
         <h2 className="p-1 text-blue">Add your Task</h2>
         <form
-          className="bg-gray px-1 py-3 mx-1 dark-shadow d-flex"
+          className="bg-gray px-1 py-3 mx-1 dark-shadow d-flex fade-animate"
           onSubmit={this.onSubmit.bind(this)}
         >
           <div className="col-6">

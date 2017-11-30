@@ -4,6 +4,7 @@
 html {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 a {
@@ -38,11 +39,18 @@ h3 {
   margin: 0 auto;
 }
 .d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 .space-between {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 .f-left {
@@ -121,6 +129,7 @@ h3 {
 }
 
 .dark-shadow {
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 /*navbar*/
@@ -140,6 +149,7 @@ nav {
 /*Buttons*/
 .btn {
   border: none;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0.6rem 1.4rem;
   cursor: pointer;
@@ -185,4 +195,24 @@ nav {
 }
 .text-orange {
   color: #f9690e;
+}
+.fade-animate {
+  -webkit-animation: fade-in 0.5s ease;
+  animation: fade-in 0.5s ease;
+}
+@-webkit-keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

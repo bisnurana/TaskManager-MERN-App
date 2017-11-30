@@ -36,16 +36,16 @@ class Todo extends Component {
     }
     const date = String(this.state.todo.date).substring(0, 10);
     return (
-      <div className="mx-1">
+      <div className="mx-1 fade-animate">
         <p>{date}</p>
         <div className="d-flex space-between bg-gray p-1 dark-shadow">
           <div className="col-6">
             <h2 className="text-blue">{this.state.todo.name}</h2>
 
-            <p>{this.state.todo.location}</p>
+            <p>Location: {this.state.todo.location}</p>
           </div>
           <p className=" col-6 task-detail text-gray">
-            {this.state.todo.detail}
+            “ {this.state.todo.detail} ”
           </p>
         </div>
 

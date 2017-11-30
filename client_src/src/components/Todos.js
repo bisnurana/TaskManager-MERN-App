@@ -24,7 +24,7 @@ class Todos extends Component {
   render() {
     if (this.state.todos.length === 0) {
       return (
-        <div className="my-3 text-center">
+        <div className="my-3 text-center fade-animate">
           <span className="status-text">Nothing to show.</span>
           <br />
           <br />
@@ -40,8 +40,8 @@ class Todos extends Component {
       return <TodoItem key={item.id} item={item} />;
     });
     return (
-      <div>
-        <h2 className="p-1 text-blue">My Todos</h2>
+      <div className="fade-animate">
+        <h2 className="p-1 text-blue">My Tasks</h2>
         <ul className="mx-1">{todoItem}</ul>
       </div>
     );

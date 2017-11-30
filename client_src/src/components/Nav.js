@@ -15,15 +15,16 @@ class Todos extends Component {
             <div className="nav-content">
               <ul className="d-flex">
                 <li className="list-item">
-                  <Link className="text-white" to="/">
-                    <span className="task-icon">⇅</span>
-                  </Link>
-                </li>
-                <li className="list-item">
                   <Link className="text-white" to="/todos/add">
                     Add Task
                   </Link>
                 </li>
+                <li className="list-item">
+                  <Link className="text-white" to="/">
+                    <span className="task-icon">⇅</span>
+                  </Link>
+                </li>
+
                 <li className="list-item">
                   <Link className="text-white" to="/about">
                     About
