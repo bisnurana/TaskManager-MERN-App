@@ -45,7 +45,7 @@ class Todo extends Component {
             <p>Location: {this.state.todo.location}</p>
           </div>
           <p className=" col-6 task-detail text-gray">
-            “ {this.state.todo.detail} ”
+            {this.state.todo.detail}
           </p>
         </div>
 
