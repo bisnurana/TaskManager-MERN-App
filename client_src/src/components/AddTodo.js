@@ -5,7 +5,7 @@ class AddTodo extends Component {
     axios
       .request({
         method: 'post',
-        url: 'http://localhost:3000/api/todos',
+        url: '/api/todos',
         data: newTask
       })
       .then(response => {

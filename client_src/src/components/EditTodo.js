@@ -18,7 +18,7 @@ class EditTodo extends Component {
   getDetails() {
     const id = this.props.match.params.id;
     axios
-      .get(`http://localhost:3000/api/todos/${id}`)
+      .get(`/api/todos/${id}`)
       .then(response => {
         this.setState({
           id: response.data.id,
@@ -34,7 +34,7 @@ class EditTodo extends Component {
     axios
       .request({
         method: 'put',
-        url: `http://localhost:3000/api/todos/${this.state.id}`,
+        url: `/api/todos/${this.state.id}`,
         data: editedTask
       })
       .then(response => {

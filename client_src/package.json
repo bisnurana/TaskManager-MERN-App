@@ -2,6 +2,11 @@
   "name": "client_src",
   "version": "0.1.0",
   "private": true,
+  "proxy": {
+    "/api/*": {
+      "target": "http://localhost:3000"
+    }
+  },
   "dependencies": {
     "axios": "^0.17.1",
     "eslint-plugin-flowtype": "^2.39.1",

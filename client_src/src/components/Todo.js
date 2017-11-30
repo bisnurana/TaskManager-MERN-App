@@ -15,7 +15,7 @@ class Todo extends Component {
   getDetails() {
     const id = this.props.match.params.id;
     axios
-      .get(`http://localhost:3000/api/todos/${id}`)
+      .get(`/api/todos/${id}`)
       .then(response => {
         this.setState({ todo: response.data });
       })
@@ -24,7 +24,7 @@ class Todo extends Component {
   onDelete() {
     const taskId = this.state.todo.id;
     axios
-      .delete(`http://localhost:3000/api/todos/${taskId}`)
+      .delete(`/api/todos/${taskId}`)
       .then(response => {
         this.props.history.push('/');
       })

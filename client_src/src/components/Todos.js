@@ -15,7 +15,7 @@ class Todos extends Component {
   }
   getTodos() {
     axios
-      .get('http://localhost:3000/api/todos')
+      .get('/api/todos')
       .then(response => {
         this.setState({ todos: response.data });
       })
