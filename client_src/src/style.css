@@ -29,8 +29,8 @@ h3 {
 }
 .input-note {
   min-height: 180px;
+  min-width: 14rem;
   width: 90%;
-  min-width: 200px;
   font-size: 1rem;
 }
 /*layout*/
@@ -62,6 +62,13 @@ h3 {
 .col-6 {
   width: 50%;
   min-width: 240px;
+}
+/*media queries*/
+@media (max-width: 560px) {
+  .col-6 {
+    display: block;
+    margin: 0 auto;
+  }
 }
 /*base*/
 .list-item {
