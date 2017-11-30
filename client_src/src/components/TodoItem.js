@@ -13,7 +13,7 @@ class TodoItem extends Component {
       ''
     );
     return (
-      <li className="list-item bg-gray dark-shadow p-1 my-1">
+      <li className="list-item bg-gray dark-shadow p-1 my-1 fade-animate">
         <div className="d-flex space-between">
           <div>
             <span className="task-date">{this.props.item.date}</span>
